@@ -4,12 +4,12 @@ from collections import Counter
 
 #We firstly used ngrok to create link available for each other but to continue the work in our side we use local links
 model_endpoints = [
-    "http://192.168.1.96:5001/predict",  # CNN
-    "http://192.168.1.96:5002/predict",  # DNN
-    "http://192.168.1.96:5003/predict",  # LSTM
-    "http://192.168.1.96:5004/predict",  # RNN
-    "http://192.168.1.96:5005/predict"   # Transformer
-]
+    "http://10.0.0.0:5001/predict",  # CNN
+    "http://10.0.0.0:5002/predict",  # DNN
+    "http://10.0.0.0:5003/predict",  # LSTM
+    "http://10.0.0.0:5004/predict",  # RNN
+    "http://10.0.0.0:5005/predict"   # Transformer
+] #Not my real IP because the repo is public
 
 def get_predictions(features):
     predictions = []
